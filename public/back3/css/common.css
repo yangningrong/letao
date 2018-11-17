@@ -50,7 +50,7 @@ ul {
   top: 0;
   background-color:#222D32;
   z-index:999;
-  /* transition:all 1s; */
+  transition:all 1s;
 }
 
 .lt_aside.hidemenu {
