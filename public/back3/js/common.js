@@ -4,7 +4,7 @@
 // setTimeout(function(){
 //   //关闭进度条
 //   NProgress.done();
-// },500)
+// },1000)
 
 
 // 需求 在第一个ajax请求时,开启进度条
@@ -27,7 +27,7 @@ $(document).ajaxStart(function(){
 $(document).ajaxStop(function(){
   setTimeout(function(){
     NProgress.done();
-  },500);
+  }, 500);
 });
 
 
