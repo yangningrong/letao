@@ -1,3 +1,5 @@
+
+
 //进度条
 // 开启进度条
 // NProgress.start();
@@ -49,10 +51,31 @@ $(function(){
     $('.lt_aside').toggleClass("hidemenu");
 
     $('.lt_main').toggleClass("hidemenu");
+
     $('.lt_topbar').toggleClass("hidemenu");
 
   })
 
   // 功能3  退出功能
+  $(".lt_topbar .icon_right").click(function(){
+    $('#logoutModal').modal("show");
+  });
+
+  // 模态框的按钮点击事件
+  $('#logoutBtn').click(function(){
+    // 发送ajax请求,让后台销毁当前用户的登录状态
+    $.ajax({
+      type:"get",
+      url:"/employee/employeeLogout",
+      dataType:"json",
+      success:function(info){
+        console.log(info);
+        if ( info.success ){
+          location.href = "login.html";
+        }
+      }
+    });
+  })
+
 })
 
