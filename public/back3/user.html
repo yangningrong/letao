@@ -58,15 +58,34 @@
         <li><a href="index.html">管理系统</a></li>
         <li class="active">用户管理</li>
       </ol>
+      				
+			
 
       <!-- 容器 需要准备有宽高的容器 -->
+      <!-- table table-bordered table-hover -->
       <div class="lt_content">
-
-        <!-- 左侧柱状图 -->
-        <div class="echarts_left pull-left"></div>
-        <!-- 右侧的饼状图 -->
-        <div class="echarts_right pull-right"></div>
-
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>手机号</th>
+                <th>状态</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>itcast</td>
+                <td>15757771111</td>
+                <td>正常</td>
+                <td>
+                  <button class="btn btn-danger">禁用</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
       </div>
     </div>
 
